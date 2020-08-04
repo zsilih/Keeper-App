@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-function Note() {
+function Note(props) {
     return (
-        <div>
-            <h1></h1>
-            <p></p>
+        <div className = "note">
+            <h1>{props.title}</h1>
+            <p>{props.content}</p>
         </div>
     )
 };
